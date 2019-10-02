@@ -1,0 +1,121 @@
+page {
+  /* 必须设置高度 否则默认无高度 */
+  height: 100%;
+}
+/* 根view */
+.root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* tab标签 */
+.bars {
+  background-color: #17170c;
+  display: flex;
+}
+
+/* 单个tab */
+.bars .bar {
+  flex: 1;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 16px;
+  padding: 8px 0px;
+}
+
+/* 内容view */
+.content {
+  flex: 1;
+  background-color: #0f0f06;
+  /* 超出部分隐藏 搭配scroll-view class="content" scroll-y使用 */
+  overflow: hidden;
+}
+
+/* tab选中样式 */
+.bars .bar.active {
+  color: #fff;
+  border-bottom: 2px solid red;
+}
+
+/* 最底下的播放 */
+.player {
+  display: flex;
+}
+
+/* 音乐的图片 */
+.portal image {
+  width: 60px;
+  height: 60px;
+  margin: 1px 2px;
+}
+
+/* 歌曲名和歌手信息 */
+.player .music {
+  flex: 1;
+}
+
+/* 歌曲名 */
+.player .music .name{
+  font-size: 18px;
+
+}
+
+/* 歌手 */
+.player .music .author{
+  font-size: 14px;
+  
+}
+
+/* 控制按钮 如播放 */
+.player .control {
+  display: flex;
+}
+
+.control_image {
+  display: block;
+  margin: 4px 4px;
+}
+
+.control_image image{
+  width: 50px;
+  height: 50px;
+}
+
+/* 轮播图和推荐歌曲的中间内容 */
+.other {
+  display: flex;
+}
+
+.other view {
+  flex: 1;
+}
+
+.other view image {
+  width:  250rpx;
+  height: 250rpx;
+}
+
+/* 推荐歌曲 */
+.list {
+  color: white;
+}
+
+.list .inner{
+  display: flex;
+  /* 自动换行 */
+  flex-wrap: wrap;
+}
+
+.list .inner image {
+  width:  245rpx;
+  height: 250rpx;
+  margin: 1px 1px;
+}
+
+/* 推荐歌曲文本 */
+.title {
+  color: white;
+  margin: 5px 10px;
+  font-size:15px;
+}

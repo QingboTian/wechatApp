@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#201e20",
+    "navigationBarTitleText": "Music Player",
+    "navigationBarTextStyle": "white"
+  }
+}

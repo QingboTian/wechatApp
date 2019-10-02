@@ -1,0 +1,98 @@
+<view class="root">
+  <view class="bars">
+    <view class="bar active">
+      <text>个性推荐</text>
+    </view>
+    <view class="bar">
+      <text>歌单</text>
+    </view>
+    <view class="bar">
+      <text>主播电台</text>
+    </view>
+    <view class="bar">
+      <text>排行榜</text>
+    </view>
+  </view>
+  <!-- scroll-y 允许纵向滑动
+    必须配合overflow:hidden一起使用
+   -->
+  <scroll-view class="content" scroll-y>
+    <view class="swiper">
+      <swiper indicator-dots interval='2000' autoplay circular>
+        <block wx:for="{{bgs}}" wx:for-item="bg" wx:index="index">
+          <swiper-item>
+            <image src='{{bg.url}}' style='width:100%'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="other">
+      <view>
+        <image src='../../image/fm.jpg' class="fm"></image>
+      </view>
+      <view>
+        <image src='../../image/day.jpg' class="day"></image>
+      </view>
+      <view>
+        <image src='../../image/new.jpg' class="new"></image>
+      </view>
+    </view>
+    <view class="list">
+      <text class="title">推荐歌曲</text>
+      <view class='inner'>
+        <view >
+          <image src='../../image/portal.jpg'></image>
+          <view>我和我的祖国</view>
+        </view>
+        <view >
+          <image src='../../image/portal.jpg'></image>
+          <view><text>我和我的祖国</text></view>
+        </view>
+        <view >
+          <image src='../../image/portal.jpg'></image>
+          <view><text>我和我的祖国</text></view>
+        </view>
+        <view>
+          <image src='../../image/portal.jpg'></image>
+          <view><text>我和我的祖国</text></view>
+        </view>
+        <view>
+          <image src='../../image/portal.jpg'></image>
+          <view><text>我和我的祖国</text></view>
+        </view>
+        <view>
+          <image src='../../image/portal.jpg'></image>
+          <view><text>我和我的祖国</text></view>
+        </view>
+        <view>
+          <image src='../../image/portal.jpg'></image>
+          <view><text>我和我的祖国</text></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="player">
+    <view class="portal">
+      <image src='../../image/portal.jpg'></image>
+    </view>
+    <view class="music">
+      <view class="name">
+        <text>我和我的祖国</text>
+      </view>
+      <view class="author">
+        <text>王菲</text>
+      </view>
+    </view>
+    <view class="control">
+      <view class="control_image">
+        <image src='../../image/1.png'></image>
+      </view>
+      <view class="control_image">
+        <image src='../../image/2.png'></image>
+      </view>
+      <view class="control_image">
+        <image src='../../image/3.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
